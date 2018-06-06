@@ -1,0 +1,11 @@
+{
+  "name": "Angular Universal Heroku Contentful",
+  "description": "Heroku build for Angular Universal and Contentful",
+  "keywords": [
+    "Angular",
+    "Universal",
+    "Contentful"
+  ],
+  "website": "https://github.com/hsandstromOM/contentful-universal-starter",
+  "repository": "https://github.com/hsandstromOM/contentful-universal-starter"
+}
