@@ -4,9 +4,17 @@ import {RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import {TransferHttpCacheModule} from '@nguniversal/common';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+
+
+import { ContentfulService } from './contentful.service';
+
+
+import {TransferHttpCacheModule} from '@nguniversal/common';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     ]),
     TransferHttpCacheModule,
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
