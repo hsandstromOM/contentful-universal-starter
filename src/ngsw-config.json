@@ -20,7 +20,10 @@
     "updateMode": "prefetch",
     "resources": {
       "files": [
-        "server/assets/**"
+        "server/assets/**",
+        "server/*.bundle.css",
+        "server/*.bundle.js",
+        "server/*.chunk.js"
       ],
       "urls": [
       "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css",
