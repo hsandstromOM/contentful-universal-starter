@@ -5,13 +5,13 @@
     "installMode": "prefetch",
     "resources": {
       "files": [
-        "/favicon.ico",
-        "/index.html"
+        "server/favicon.ico",
+        "server/index.html"
       ],
       "versionedFiles": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
+        "server/*.bundle.css",
+        "server/*.bundle.js",
+        "server/*.chunk.js"
       ]
     }
   }, {
@@ -20,7 +20,7 @@
     "updateMode": "prefetch",
     "resources": {
       "files": [
-        "/assets/**"
+        "server/assets/**"
       ]
     }
   }]
