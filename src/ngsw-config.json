@@ -21,6 +21,11 @@
     "resources": {
       "files": [
         "server/assets/**"
+      ],
+      "urls": [
+      "http://via.placeholder.com/**",
+      "https://cdn.contentful.com/**",
+      "https://cdn.contentful.com/spaces/u3mm3bhdpc78?access_token=dccd23a7ee182845fe72c812ba8d1cdd5afc1e7b632e94499a3d779bc481a046"
       ]
     }
   }]
