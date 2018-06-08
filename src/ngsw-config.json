@@ -21,6 +21,8 @@
     "resources": {
       "files": [
         "server/assets/**",
+        "server/assets/favicons/**",
+        "server/assets/images/**",
         "server/*.bundle.css",
         "server/*.bundle.js",
         "server/*.chunk.js"
