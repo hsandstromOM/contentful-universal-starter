@@ -4,6 +4,19 @@ import {RouterModule} from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+import { OktaAuthService } from '@okta/okta-angular';
+
+import {
+  OktaAuthModule,
+  OktaCallbackComponent,
+} from '@okta/okta-angular';
+
+const config = {
+  issuer: 'https://dev-413097.oktapreview.com/oauth2/default',
+  redirectUri: 'http://localhost:4200/implicit/callback',
+  clientId: '0oaff6hctw7CTTMKK0h7'
+}
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -29,8 +42,10 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
+    OktaAuthModule.initAuth(config),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full'},
+      {path: 'implicit/callback', component: OktaCallbackComponent},
       { path: 'portfolio', component: PortfolioComponent, pathMatch: 'full'},
       { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'},
       { path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
